@@ -1,0 +1,9 @@
+# Chroma settings
+action: null
+chroma_host: "127.0.0.1"
+chroma_port: 57778
+chroma_collection_name_en: "skill_points_en"
+chroma_collection_name_cn: "skill_points_cn"
+chroma_collection_meta_data_path_en: "../../data/skill-points-en.json"
+chroma_collection_meta_data_path_cn: "../../data/skill-points-cn.json"
+chroma_collection_embedding_dir: "../../data/skill-points-embeddings"

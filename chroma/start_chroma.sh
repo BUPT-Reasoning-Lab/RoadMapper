@@ -1,0 +1,1 @@
+chroma run --host 0.0.0.0 --port 57778 --path ./chroma-server
