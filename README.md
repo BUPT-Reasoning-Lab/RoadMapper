@@ -1,12 +1,23 @@
-<div align="center">
-    <h1>RoadMapper: A Multi-Agent System for Roadmap Generation of Solving Complex Research Problems</h1>
+<div align="center" style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+    <img src="assets/logo.png" alt="RoadMapper Logo" width="120"/>
+    <h1 style="margin: 0;">RoadMapper: A Multi-Agent System for Roadmap Generation of Solving Complex Research Problems</h1>
 </div>
 
 
 # 1 Introduction
 The data and code for the paper `RoadMapper: A Multi-Agent System for Roadmap Generation of Solving Complex Research Problems`
 ## 1.1 Abstract
-People commonly leverage structured content to accelerate knowledge acquisition and research problems solving. Among these, roadmaps guide researchers through hierarchical subtasks to solve complex research problems step by step. Despite progress in structured content generation, the **roadmap generation task** has remained unexplored. To bridge this gap, we introduce **RoadMap**, a novel benchmark designed to evaluate the ability of large language models (LLMs) to construct high-quality roadmaps for solving complex research problems. Based on this, we identify three limitations of LLMs: (1) lack of professional knowledge; (2) unreasonable task decomposition; (3) disordered logical relationships. To address these challenges, we propose **RoadMapper**, an LLM-based multi-agent system that decomposes the research roadmap generation task into three key stages (i.e., initial generation, knowledge augmentation, and iterative "critique-revise-evaluate"). Extensive experiments demonstrate that RoadMapper can improve LLMs' ability for roadmap generation, enhancing average performance by more than 8% while saving 71% of the time required by human experts, highlighting its effectiveness and application potential. Our data and code are available at https://anonymous.4open.science/r/RoadMapper.
+People commonly leverage structured content to accelerate knowledge acquisition and research problem solving. Among these, roadmaps guide researchers through hierarchical subtasks to solve complex research problems step by step. Despite progress in structured content generation, the **roadmap generation task** has remained unexplored. To bridge this gap, we introduce **RoadMap**, a novel benchmark designed to evaluate the ability of large language models (LLMs) to construct high-quality roadmaps for solving complex research problems. Based on this, we identify three limitations of LLMs: (1) *lack of professional knowledge*, (2) *unreasonable task decomposition*, and (3) *disordered logical relationships*. To address these challenges, we propose **RoadMapper**, an LLM-based multi-agent system that decomposes the research roadmap generation task into three key stages (*i.e.*, initial generation, knowledge augmentation, and iterative "critique-revise-evaluate"). Extensive experiments demonstrate that RoadMapper can improve LLMs' ability for roadmap generation, while enhancing average performance by more than **8%** and **saving 84% of the time** required by human experts, highlighting its effectiveness and application potential.
+
+<div align="center">
+    <img src="assets/Benchmark_RoadMap.png" alt="RoadMap Benchmark Overview" width="100%"/>
+</div>
+<p align="center"><em>Figure 1. Overview of the RoadMap benchmark.</em></p>
+
+<div align="center">
+    <img src="assets/Method_RoadMapper.png" alt="RoadMapper Method Overview" width="100%"/>
+</div>
+<p align="center"><em>Figure 2. Overview of the RoadMapper multi-agent methodology.</em></p>
 
 
 ## 1.2 Repository Structure
@@ -265,7 +276,6 @@ root/
 
 
 ## 2.4 Run the Evaluation
-
 We use `./code/experiments/eval.py` for main experiment evaluation of inference outcome. Before executing the script, you need to configure the Config class:
 
 **Common Configuration Items (usually need to be modified):**
