@@ -202,6 +202,24 @@ h2 {
     transform: scale(1.15);
 }
 
+.poster {
+    margin: 1rem 0;
+}
+
+.poster-figure {
+    margin: 0;
+    text-align: center;
+    border: 1px solid #d8d8d8;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background: #ffffff;
+}
+
+.poster-figure img {
+    max-width: 100%;
+    height: auto;
+}
+
 .abstract p {
     margin: 0;
     text-align: justify;
